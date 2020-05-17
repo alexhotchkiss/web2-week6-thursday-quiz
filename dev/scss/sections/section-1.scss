@@ -97,24 +97,65 @@
     }
 
       aside{
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas: ". section-1 .";
           >h4{
               grid-area: section-1;
-              padding-top: 186px;
-              text-align: center;
+              padding-top: 220px;
               color: $white;
               font-family: 'comfortaa';
               background-color: none;
               font-size: 17px;
+              padding-left: 180px;
+
+              @include md{
+                font-size: 20px;
+                padding-left: 340px;
+                padding-top: 180px;
+              }
+
+              @include lg{
+                font-size: 28px;
+                padding-left: 524px;
+                padding-top: 148px;
+
+              }
+
+              @include xl{
+                font-size: 29px;
+                padding-left: 549px;
+                padding-top: 176px;
+
+              }
+
+          }
+          img{
+            padding-left: 182px;
+            padding-top: 212px;
+            height: 80px;
+
+            @include md{
+                padding-left: 335px;
+                padding-top: 162px;
+                height: 105px;
+            }
+
+            @include lg{
+                padding-left: 510px;
+                padding-top: 120px;
+                height: 150px;
+
+            }
+
+            @include xl{
+                padding-left: 535px;
+                padding-top: 148px;
+                height: 155px;
+
+            }
           }
       }
-
-    @include md{
-
-        
-
-        
-        
-    }
 }
 
 
