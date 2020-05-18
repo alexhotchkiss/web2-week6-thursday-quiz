@@ -1,69 +1,217 @@
 /* =============
     section 3
 ============= */
-#sectoion-3{
+#section-3{
+    display: grid;
+    background-color: $white;
+
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-3-container .";
+    }
 
     #section-3-container{
 
-        section{
+        #section-3-title{
             h1{
+                font-family: 'Montserrat-Bold', sans-serif;
+                text-align: center;
+                grid-template-areas: ". section .";
+                @include xl{
+                    padding-left: 130px;
+                }
+                
+                
                 
             }
+        }
 
-            #section-3-content-1{
-                img{
-                    
+        section{
+            display: grid;
+            grid-template-areas: 
+            "card1"
+            "card2"
+            "card3";
+            grid-gap: 35px;
+            margin: 10px;
+
+            
+
+
+            img{
+                height: 277px;
+
+
+                @include lg{
+                    height: 240px;
+
                 }
 
-                h2{
-
+                @include xl{
+                    height: 240px;
                 }
-
-                p{
-
-                }
-
-                h4{
-
-                }
-
             }
 
-            #section-3-content-2{
-                img{
+            @include md{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 30px 40px;
+                grid-template-areas: "card1 card1 card2 card2"
+                ". card3 card3 .";
+            }
+
+            @include lg{
+                display: grid;
+                grid-template-areas: "card1 card2 card3";
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+                gap: 0px 30px;
+                margin: 30px;
+            }
+
+            @include xl{
+                display: grid;
+                grid-template-areas: "card1 card2 card3";
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+                gap: 0px 30px;
+                margin: 30px;
+                padding-left: 110px;
+            }
+
+            
+
+           
+            #section-3-content-1{
+                display: grid;
+                background-color: $eggshell;
+                grid-area: card1;
+
+
+
+                h2{
+                    display: grid;
+                    grid-template-columns: 65% auto;
+                    padding-left: 100px;
+                    font-size: 30px;
+                    font-family: 'Montserrat-bold', sans-serif;
+                    @include lg{
+                        grid-template-columns: 90% auto;
+                        padding-left: 75px;
+                        font-size: 34px;
+                    }
                     
                 }
 
-                h2{
-
-                }
-
                 p{
+                    display: grid;
+                    grid-template-columns: 90% auto;
+                    padding-left: 50px;
+                    font-family: 'Multiple', sans-serif;
+                    font-size: 20px;
+                    @include lg{
+                        grid-template-columns: 100% auto;
+                        padding-left: 25px;
+                        font-size: 22px;
+                        
+                    }
+                    
 
                 }
 
                 h4{
+                    padding-left: 50px;
+                    font-family: 'Multiple', sans-serif;
+                }
+            
+
+            
+            }
+
+
+            #section-3-content-2{
+                display: grid;
+                background-color: $eggshell;
+                grid-area: card2;
+                h1{
+                    display: grid;
+                    grid-template-columns: 100% auto;
+                    padding-left: 60px;
+                    font-size: 30px;
+                    font-family: 'Montesrrat-bold', sans-serif;
+                    @include lg{
+                        grid-template-columns: 120% auto;
+                        padding-left: 20px;
+                        font-size: 32px;
+                    }
+                    
+                }
+
+                p{
+                    display: grid;
+                    grid-template-columns: 95% auto;
+                    padding-left: 45px;
+                    font-family: 'Multiple', sans-serif;
+                    font-size: 20px;
+                    @include lg{
+                        grid-template-columns: 100% auto;
+                        padding-left: 37px;
+                        font-size: 22px;
+                        
+                    }
 
                 }
+                h4{
+                    padding-left: 45px;
+                    font-family: 'Multiple', sans-serif;
+                }
+
+               
 
             }
 
             #section-3-content-3{
-                img{
+                display: grid;
+                background-color: $eggshell;
+                grid-area: card3;
+                h1{
+                    display: grid;
+                    grid-template-columns: 65% auto;
+                    padding-left: 100px;
+                    font-size: 30px;
+                    font-family: 'Montesrrat-bold', sans-serif;
+                    @include lg{
+                        grid-template-columns: 90% auto;
+                        padding-left: 75px;
+                        font-size: 34px;
+                    }
                     
                 }
 
-                h2{
-
-                }
-
                 p{
+                    display: grid;
+                    grid-template-columns: 90% auto;
+                    padding-left: 50px;
+                    font-family: 'Multiple', sans-serif;
+                    font-size: 20px;
+                    @include lg{
+                        grid-template-columns: 100% auto;
+                        padding-left: 25px;
+                        font-size: 22px;
+                        
+                    }
 
                 }
 
                 h4{
-
+                    padding-left: 50px;
+                    font-family: 'Multiple', sans-serif;
                 }
+                
+
+
 
             }
         }

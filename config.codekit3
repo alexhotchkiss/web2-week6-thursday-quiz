@@ -313,20 +313,7 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/section-3.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 0
-		},
-	"/dev/scss/sections/section-4.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/section-4.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"sct": 0
 		},
@@ -347,7 +334,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/section-1.kit",
 		"oF": 3
 		},
@@ -355,7 +342,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/section-2.kit",
 		"oF": 3
 		},
@@ -363,16 +350,8 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/section-3.kit",
-		"oF": 3
-		},
-	"/dev/section-4.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/section-4.kit",
 		"oF": 3
 		},
 	"/README.md": {

@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns: auto 1200px auto;
     grid-template-areas: ". section-1 .";
+    height: 760px;
   }
 
   #section-1-content{
@@ -125,7 +126,7 @@
               @include xl{
                 font-size: 29px;
                 padding-left: 549px;
-                padding-top: 176px;
+                padding-top: 290px;
 
               }
 
@@ -150,7 +151,7 @@
 
             @include xl{
                 padding-left: 535px;
-                padding-top: 148px;
+                padding-top: 265px;
                 height: 155px;
 
             }
