@@ -1,3 +1,136 @@
 /* =============
     Typography
 ============= */
+#section-1{
+    p{
+        font-family: 'comfortaa' ;
+        font-size: 20px;
+        @include md{
+            font-size: 21px;
+        }
+        @include lg{
+            font-size: 27px;
+        }
+        @include xl{
+            font-size: 25px;
+        }
+    }
+    h1{
+        font-family: 'comfortaa' ;
+        font-size: 30px;
+        @include md{
+            font-size: 32px;        
+        }
+
+        @include lg{
+            font-size: 50px;
+        }
+
+        @include xl{
+            font-size: 50px;
+        }
+    }
+    h4{
+        font-family: 'comfortaa';
+        font-size: 17px;
+        @include md{
+            font-size: 20px;
+          }
+
+          @include lg{
+            font-size: 28px;
+          }
+
+          @include xl{
+            font-size: 29px;
+          }
+    }
+
+}
+
+#section-2{
+    h1{
+        font-family: 'Montserrat-Bold', sans-serif;
+    }
+    p{
+        font-family: 'Lato-Regular', sans-serif;
+    }
+
+}
+
+#section-3{
+    h1{
+        font-family: 'Montserrat-Bold', sans-serif;
+    }
+
+    #section-3-content-1{
+        h2{
+            font-size: 30px;
+            font-family: 'Montserrat-bold', sans-serif;
+            @include lg{
+                font-size: 34px;
+            }
+
+        }
+        p{
+            font-family: 'Lato-Regular', sans-serif;
+            font-size: 20px;
+            @include lg{
+                font-size: 20px;
+                
+            }
+            
+        }
+        h4{
+            font-family: 'Lato-Regular', sans-serif;
+        }
+
+    }
+
+    #section-3-content-2{
+        h1{
+            font-size: 30px;
+            font-family: 'Montserrat-bold', sans-serif;
+            @include lg{
+                font-size: 32px;
+            }
+
+        }
+        p{
+            font-family: 'Lato-Regular', sans-serif;
+            font-size: 20px;
+            @include lg{
+                font-size: 20px;
+            }
+            
+        }
+        h4{
+            font-family: 'Lato-Regular', sans-serif;
+        }
+
+    }
+
+    #section-3-content-3{
+        h1{
+            font-size: 30px;
+            font-family: 'Montserrat-bold', sans-serif;
+            @include lg{
+                font-size: 32px;
+            }
+
+        }
+        p{
+            font-family: 'Lato-Regular', sans-serif;
+            font-size: 20px;
+            @include lg{
+                font-size: 20px;
+            }
+            
+        }
+        h4{
+            font-family: 'Lato-Regular', sans-serif; 
+        }
+
+    }
+
+}

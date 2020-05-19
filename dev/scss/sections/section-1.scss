@@ -2,7 +2,7 @@
     Section 1
 ============= */
 #section-1 {
-  background-image: url("../img/main_slide_21.jpg");
+  background-image: url("../img/hero.jpg");
   background-size: cover;
   height: 600px;
   background-position: center;
@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: auto 1200px auto;
     grid-template-areas: ". section-1 .";
-    height: 760px;
+    height: 800px;
   }
 
   #section-1-content{
@@ -24,12 +24,12 @@
           padding-top: 80px;
           grid-area: section-1;
           text-align: center;
-          font-size: 20px;
-          font-family: 'comfortaa' ;
+          // font-size: 20px;
+          // font-family: 'comfortaa' ;
           color: $light-blue;
 
           @include md{
-              font-size: 21px;
+              // font-size: 21px;
               text-align: center;
               display: grid;
               grid-template-columns: auto 165px auto;
@@ -39,7 +39,7 @@
           }
 
           @include lg{
-              font-size: 27px;
+              // font-size: 27px;
               text-align: center;
               display: grid;
               grid-template-columns: auto 280px 0px;
@@ -49,7 +49,7 @@
           }
 
           @include xl{
-              font-size: 25px;
+              // font-size: 25px;
               padding-top: 110px;
               text-align: center;
               display: grid;
@@ -61,14 +61,14 @@
       }
       >h1{
           grid-area: section-1;
-          font-family: 'comfortaa' ;
+          // font-family: 'comfortaa' ;
           color: $blue;
           text-align: center;
-          font-size: 30px;
+          // font-size: 30px;
           padding-top: 40px;
 
           @include md{
-              font-size: 32px;
+              // font-size: 32px;
               display: grid;
               grid-template-columns: auto 10px 0px;
               grid-template-areas: ". section-1 .";
@@ -76,7 +76,7 @@
           }
 
           @include lg{
-              font-size: 50px;
+              // font-size: 50px;
               text-align: center;
               display: grid;
               grid-template-columns: auto 10px 0px;
@@ -86,7 +86,7 @@
           }
 
           @include xl{
-              font-size: 50px;
+              // font-size: 50px;
               padding-top: 25px;
               display: grid;
               grid-template-columns: auto 10px 0px;
@@ -105,26 +105,26 @@
               grid-area: section-1;
               padding-top: 220px;
               color: $white;
-              font-family: 'comfortaa';
+              // font-family: 'comfortaa';
               background-color: none;
-              font-size: 17px;
+              // font-size: 17px;
               padding-left: 180px;
 
               @include md{
-                font-size: 20px;
-                padding-left: 340px;
+                // font-size: 20px;
+                padding-left: 389px;
                 padding-top: 180px;
               }
 
               @include lg{
-                font-size: 28px;
+                // font-size: 28px;
                 padding-left: 524px;
                 padding-top: 148px;
 
               }
 
               @include xl{
-                font-size: 29px;
+                // font-size: 29px;
                 padding-left: 549px;
                 padding-top: 290px;
 
@@ -137,7 +137,7 @@
             height: 80px;
 
             @include md{
-                padding-left: 335px;
+                padding-left: 385px;
                 padding-top: 162px;
                 height: 105px;
             }
