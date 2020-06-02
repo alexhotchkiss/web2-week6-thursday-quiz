@@ -16,147 +16,132 @@
   }
 
   #section-1-content{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-1 .";
+      
+    >p{
+      padding-top: 80px;
+      grid-area: section-1;
+      text-align: center;
+      color: $light-blue;
       display: grid;
-      grid-template-columns: 15px auto 15px;
-      grid-template-areas: ". section-1 .";
-      
-      >p{
-          padding-top: 80px;
-          grid-area: section-1;
-          text-align: center;
-          // font-size: 20px;
-          // font-family: 'comfortaa' ;
-          color: $light-blue;
 
-          @include md{
-              // font-size: 21px;
-              text-align: center;
-              display: grid;
-              grid-template-columns: auto 165px auto;
-              grid-template-areas: ". section-1 .";
-              padding-left: 170px;
-              padding-top: 87px;
-          }
+      @include md{
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto 165px auto;
+        grid-template-areas: ". section-1 .";
+        padding-left: 170px;
+        padding-top: 87px;
+      }
 
-          @include lg{
-              // font-size: 27px;
-              text-align: center;
-              display: grid;
-              grid-template-columns: auto 280px 0px;
-              grid-template-areas: ". section-1 .";
-              padding-top: 125px;
-              padding-left: 280px;
-          }
+      @include lg{
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto 280px 0px;
+        grid-template-areas: ". section-1 .";
+        padding-top: 125px;
+        padding-left: 280px;
+      }
 
-          @include xl{
-              // font-size: 25px;
-              padding-top: 110px;
-              text-align: center;
-              display: grid;
-              grid-template-columns: auto 250px auto;
-              grid-template-areas: ". section-1 .";
+      @include xl{
+        padding-top: 110px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto 250px auto;
+        grid-template-areas: ". section-1 .";
             
-          }
-
       }
-      >h1{
-          grid-area: section-1;
-          // font-family: 'comfortaa' ;
-          color: $blue;
-          text-align: center;
-          // font-size: 30px;
-          padding-top: 40px;
 
-          @include md{
-              // font-size: 32px;
-              display: grid;
-              grid-template-columns: auto 10px 0px;
-              grid-template-areas: ". section-1 .";
-              
-          }
+    }
+    >h1{
+      grid-area: section-1;
+      color: $blue;
+      text-align: center;
+      padding-top: 40px;
 
-          @include lg{
-              // font-size: 50px;
-              text-align: center;
-              display: grid;
-              grid-template-columns: auto 10px 0px;
-              grid-template-areas: ". section-1 .";
-              padding-top: 40px;
-              padding-left: 10px;
-          }
-
-          @include xl{
-              // font-size: 50px;
-              padding-top: 25px;
-              display: grid;
-              grid-template-columns: auto 10px 0px;
-              grid-template-areas: ". section-1 .";
-          }
-
+      @include md{
+        display: grid;
+        grid-template-columns: auto 10px 0px;
+        grid-template-areas: ". section-1 .";    
       }
+
+      @include lg{
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto 10px 0px;
+        grid-template-areas: ". section-1 .";
+        padding-top: 40px;
+        padding-left: 10px;
+      }
+
+      @include xl{
+        padding-top: 25px;
+        display: grid;
+        grid-template-columns: auto 10px 0px;
+        grid-template-areas: ". section-1 .";
+      }
+
+    }
       
+  }
+
+  aside{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-1 .";
+
+    >h4{
+      grid-area: section-1;
+      padding-top: 190px;
+      color: $white;
+      background-color: none;
+      padding-left: 124px;
+
+      @include md{
+        padding-left: 355px;
+        padding-top: 183px;
+      }
+
+      @include lg{
+        padding-left: 524px;
+        padding-top: 148px;
+      }
+
+      @include xl{
+        padding-left: 549px;
+        padding-top: 290px;
+      }
+
     }
 
-      aside{
-        display: grid;
-        grid-template-columns: 15px auto 15px;
-        grid-template-areas: ". section-1 .";
-          >h4{
-              grid-area: section-1;
-              padding-top: 220px;
-              color: $white;
-              // font-family: 'comfortaa';
-              background-color: none;
-              // font-size: 17px;
-              padding-left: 180px;
+    img{
+      padding-left: 125px;
+      padding-top: 180px;
+      height: 80px;
 
-              @include md{
-                // font-size: 20px;
-                padding-left: 389px;
-                padding-top: 180px;
-              }
-
-              @include lg{
-                // font-size: 28px;
-                padding-left: 524px;
-                padding-top: 148px;
-
-              }
-
-              @include xl{
-                // font-size: 29px;
-                padding-left: 549px;
-                padding-top: 290px;
-
-              }
-
-          }
-          img{
-            padding-left: 182px;
-            padding-top: 212px;
-            height: 80px;
-
-            @include md{
-                padding-left: 385px;
-                padding-top: 162px;
-                height: 105px;
-            }
-
-            @include lg{
-                padding-left: 510px;
-                padding-top: 120px;
-                height: 150px;
-
-            }
-
-            @include xl{
-                padding-left: 535px;
-                padding-top: 265px;
-                height: 155px;
-
-            }
-          }
+      @include md{
+        padding-left: 350px;
+        padding-top: 165px;
+        height: 105px;
       }
+
+      @include lg{
+        padding-left: 510px;
+        padding-top: 120px;
+        height: 150px;
+
+      }
+
+      @include xl{
+        padding-left: 535px;
+        padding-top: 265px;
+        height: 155px;
+
+      }
+    }
+  }
 }
 
 

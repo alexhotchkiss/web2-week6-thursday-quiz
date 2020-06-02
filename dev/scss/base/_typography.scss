@@ -54,6 +54,9 @@
     }
     p{
         font-family: 'Lato-Regular', sans-serif;
+        @include md{
+            text-align: left;
+        }
     }
 
 }
@@ -75,6 +78,7 @@
         p{
             font-family: 'Lato-Regular', sans-serif;
             font-size: 20px;
+            text-align: justify;
             @include lg{
                 font-size: 20px;
                 
@@ -89,7 +93,7 @@
 
     #section-3-content-2{
         h1{
-            font-size: 30px;
+            font-size: 28px;
             font-family: 'Montserrat-bold', sans-serif;
             @include lg{
                 font-size: 32px;
@@ -114,6 +118,7 @@
         h1{
             font-size: 30px;
             font-family: 'Montserrat-bold', sans-serif;
+            text-align: center;
             @include lg{
                 font-size: 32px;
             }
@@ -121,7 +126,7 @@
         }
         p{
             font-family: 'Lato-Regular', sans-serif;
-            font-size: 20px;
+            font-size: 18px;
             @include lg{
                 font-size: 20px;
             }

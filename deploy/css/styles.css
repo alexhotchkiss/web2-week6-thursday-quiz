@@ -455,6 +455,11 @@ ul li {
 #section-2 p {
   font-family: "Lato-Regular", sans-serif;
 }
+@media (min-width: 768px) {
+  #section-2 p {
+    text-align: left;
+  }
+}
 
 #section-3 h1 {
   font-family: "Montserrat-Bold", sans-serif;
@@ -471,6 +476,7 @@ ul li {
 #section-3 #section-3-content-1 p {
   font-family: "Lato-Regular", sans-serif;
   font-size: 20px;
+  text-align: justify;
 }
 @media (min-width: 992px) {
   #section-3 #section-3-content-1 p {
@@ -481,7 +487,7 @@ ul li {
   font-family: "Lato-Regular", sans-serif;
 }
 #section-3 #section-3-content-2 h1 {
-  font-size: 30px;
+  font-size: 28px;
   font-family: "Montserrat-bold", sans-serif;
 }
 @media (min-width: 992px) {
@@ -504,6 +510,7 @@ ul li {
 #section-3 #section-3-content-3 h1 {
   font-size: 30px;
   font-family: "Montserrat-bold", sans-serif;
+  text-align: center;
 }
 @media (min-width: 992px) {
   #section-3 #section-3-content-3 h1 {
@@ -512,7 +519,7 @@ ul li {
 }
 #section-3 #section-3-content-3 p {
   font-family: "Lato-Regular", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 @media (min-width: 992px) {
   #section-3 #section-3-content-3 p {
@@ -624,6 +631,7 @@ footer .hr5 {
   grid-area: section-1;
   text-align: center;
   color: #338595;
+  display: grid;
 }
 @media (min-width: 768px) {
   #section-1 #section-1-content > p {
@@ -692,15 +700,15 @@ footer .hr5 {
 }
 #section-1 aside > h4 {
   grid-area: section-1;
-  padding-top: 220px;
+  padding-top: 190px;
   color: #fff;
   background-color: none;
-  padding-left: 180px;
+  padding-left: 124px;
 }
 @media (min-width: 768px) {
   #section-1 aside > h4 {
-    padding-left: 389px;
-    padding-top: 180px;
+    padding-left: 355px;
+    padding-top: 183px;
   }
 }
 @media (min-width: 992px) {
@@ -716,14 +724,14 @@ footer .hr5 {
   }
 }
 #section-1 aside img {
-  padding-left: 182px;
-  padding-top: 212px;
+  padding-left: 125px;
+  padding-top: 180px;
   height: 80px;
 }
 @media (min-width: 768px) {
   #section-1 aside img {
-    padding-left: 385px;
-    padding-top: 162px;
+    padding-left: 350px;
+    padding-top: 165px;
     height: 105px;
   }
 }
@@ -795,9 +803,6 @@ footer .hr5 {
     padding-top: 140px;
   }
 }
-#section-2 #section-2-container section #section-2-content p {
-  text-align: justify;
-}
 @media (min-width: 1200px) {
   #section-2 #section-2-container section #section-2-content p {
     display: grid;
@@ -865,12 +870,12 @@ footer .hr5 {
 #section-3 #section-3-container section {
   display: grid;
   grid-template-areas: "card1" "card2" "card3";
-  grid-gap: 35px;
+  grid-gap: 30px;
   margin: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 #section-3 #section-3-container section img {
-  height: 277px;
+  height: 200px;
 }
 @media (min-width: 992px) {
   #section-3 #section-3-container section img {
@@ -887,8 +892,9 @@ footer .hr5 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 30px 40px;
+    gap: 20px 40px;
     grid-template-areas: "card1 card1 card2 card2" ". card3 card3 .";
+    margin: 45px;
   }
 }
 @media (min-width: 992px) {
@@ -897,9 +903,9 @@ footer .hr5 {
     grid-template-areas: "card1 card2 card3";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    gap: 0px 30px;
-    margin: 30px;
-    padding-left: 30px;
+    gap: 0px 0px;
+    margin: px;
+    padding-left: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -908,20 +914,41 @@ footer .hr5 {
     grid-template-areas: "card1 card2 card3";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    gap: 0px 30px;
+    gap: 20px 30px;
     margin: 30px;
-    padding-left: 110px;
+    padding-left: 100px;
   }
 }
 #section-3 #section-3-container section #section-3-content-1 {
   display: grid;
   background-color: #eeeeee;
   grid-area: card1;
+  background-image: url("../img/Londonersign.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-container section #section-3-content-1 {
+    background-size: 320px;
+  }
+}
+@media (min-width: 992px) {
+  #section-3 #section-3-container section #section-3-content-1 {
+    background-size: 400px;
+  }
 }
 #section-3 #section-3-container section #section-3-content-1 h2 {
   display: grid;
-  grid-template-columns: 65% auto;
-  padding-left: 100px;
+  grid-template-columns: 100% auto;
+  padding-left: 50px;
+  padding-top: 200px;
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-container section #section-3-content-1 h2 {
+    padding-top: 210px;
+    text-align: center;
+    grid-template-columns: 80%;
+  }
 }
 @media (min-width: 992px) {
   #section-3 #section-3-container section #section-3-content-1 h2 {
@@ -931,8 +958,8 @@ footer .hr5 {
 }
 #section-3 #section-3-container section #section-3-content-1 p {
   display: grid;
-  grid-template-columns: 90% auto;
-  padding-left: 50px;
+  grid-template-columns: 80% auto;
+  padding-left: 40px;
 }
 @media (min-width: 992px) {
   #section-3 #section-3-container section #section-3-content-1 p {
@@ -941,22 +968,38 @@ footer .hr5 {
   }
 }
 #section-3 #section-3-container section #section-3-content-1 h4 {
-  padding-left: 50px;
+  padding-left: 40px;
 }
 @media (min-width: 992px) {
   #section-3 #section-3-container section #section-3-content-1 h4 {
-    padding-left: 20px;
+    padding-left: 15px;
   }
 }
 #section-3 #section-3-container section #section-3-content-2 {
   display: grid;
+  background-image: url("../img/Letterpress.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px;
   background-color: #eeeeee;
   grid-area: card2;
 }
+@media (min-width: 768px) {
+  #section-3 #section-3-container section #section-3-content-2 {
+    background-size: 320px;
+  }
+}
 #section-3 #section-3-container section #section-3-content-2 h1 {
   display: grid;
-  grid-template-columns: 100% auto;
-  padding-left: 60px;
+  grid-template-columns: 130% auto;
+  padding-left: 15px;
+  padding-top: 200px;
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-container section #section-3-content-2 h1 {
+    padding-top: 210px;
+    text-align: center;
+    grid-template-columns: 100%;
+  }
 }
 @media (min-width: 992px) {
   #section-3 #section-3-container section #section-3-content-2 h1 {
@@ -987,11 +1030,27 @@ footer .hr5 {
   display: grid;
   background-color: #eeeeee;
   grid-area: card3;
+  background-image: url("../img/businesscard.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-container section #section-3-content-3 {
+    background-size: 320px;
+  }
 }
 #section-3 #section-3-container section #section-3-content-3 h1 {
   display: grid;
-  grid-template-columns: 65% auto;
-  padding-left: 100px;
+  grid-template-columns: 90% auto;
+  padding-left: 20px;
+  padding-top: 200px;
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-container section #section-3-content-3 h1 {
+    padding-top: 210px;
+    padding-left: 0px;
+    grid-template-columns: 100%;
+  }
 }
 @media (min-width: 992px) {
   #section-3 #section-3-container section #section-3-content-3 h1 {
@@ -1002,8 +1061,8 @@ footer .hr5 {
 }
 #section-3 #section-3-container section #section-3-content-3 p {
   display: grid;
-  grid-template-columns: 90% auto;
-  padding-left: 50px;
+  grid-template-columns: 89% auto;
+  padding-left: 30px;
 }
 @media (min-width: 992px) {
   #section-3 #section-3-container section #section-3-content-3 p {
@@ -1013,5 +1072,5 @@ footer .hr5 {
   }
 }
 #section-3 #section-3-container section #section-3-content-3 h4 {
-  padding-left: 28px;
+  padding-left: 30px;
 }
